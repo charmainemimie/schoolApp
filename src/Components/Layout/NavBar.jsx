@@ -23,7 +23,7 @@ const NavBar = () => {
             <Navbar.Brand to=""></Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse>
-              <Link className="pr-12" to="/">
+              <Link className="pr-12" to="/home">
                 Home
               </Link>
               <Link className="pr-12" to="/notes">

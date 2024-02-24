@@ -1,6 +1,7 @@
-
-import {Link} from 'react-router-dom'
-const LandingMainArea = () => {
+//import React from 'react'
+import NavBar from "../Layout/NavBar";
+//import {Link} from 'react-router-dom'
+const HomeMainArea = () => {
   return (
     <div
       className="text-white min-h-screen relative bg-center bg-cover"
@@ -15,26 +16,23 @@ const LandingMainArea = () => {
       ></div>
       {/* Content */}
       <div className="relative z-10">
-        {/* <NavBar /> */}
+         <NavBar /> 
         <div className="pl-8 pt-10 grid grid-cols-1 lg:grid-cols-2 lg:pt-16 xl:pt-24">
           <div>
             <h1 className="text-5xl font-bold mb-4 italic">
-              Believe you can, and you’re halfway there.
+              Welcome student...
             </h1>
             <p className="text-lg pt-6">
               Education goes beyond the confines of classrooms and textbooks.
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center pt-20 lg:pt-24 xl:pt-32">
-          <input type="password" placeholder='enter password' className="text-black rounded-3xl px-16 py-4 placeholder:text-black placeholder:text-xl placeholder:text-center focus:ring focus:ring-[#B2997C] border-[#B2997C]" />
-        </div>
-        <div className="flex items-center justify-center pt-4 lg:pt-4 xl:pt-4">
-        <Link to='/home'><button className="border border-2 rounded-3xl p-3 bg-[#B2997C] text-xl text-black px-32 py-3  ">Submit</button></Link>
-      </div>
+        
+        
+     
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LandingMainArea;
+export default HomeMainArea
